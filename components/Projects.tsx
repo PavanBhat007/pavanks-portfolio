@@ -23,7 +23,7 @@ export const Projects = () => {
         <h2 className="text-2xl font-bold text-white">Featured Projects</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {PROJECTS.slice(0, 2).map((project, idx) => (
           <ProjectCard key={idx} {...project} />
         ))}
@@ -71,7 +71,7 @@ export const ProjectCard = ({
     <Link href={`projects/${slug}`}>
       <div
         key={id}
-        className="group relative rounded-lg border border-[#495068] bg-[#1E1E2E] p-5 hover:p-0 transition-[background-color,border-color,padding] ease-in-out hover:border-neon cursor-pointer"
+        className="group h-full relative rounded-lg border border-[#495068] bg-[#1E1E2E] p-5 hover:p-0 transition-[background-color,border-color,padding] ease-in-out duration-300 hover:border-neon cursor-pointer"
       >
         <div>
           <Image
