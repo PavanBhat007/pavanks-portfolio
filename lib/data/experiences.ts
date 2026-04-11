@@ -1,8 +1,8 @@
 export const EXPERIENCES = [
   {
-    role: "AI Engineer",
+    role: "Implementations Engineer",
     company: "Neurofin AI",
-    period: "Nov 2025 to Jan 2026",
+    period: "Nov 2025 to Present",
     description:
       "Configured client systems and tested LLM responses to ensure accuracy and reliability across AI workflows.",
     color: "bg-neon",
