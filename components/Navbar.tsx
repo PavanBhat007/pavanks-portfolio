@@ -27,12 +27,12 @@ export const Navbar = () => {
               </span>
             </a>
 
-            <a href="/experiences" className="group transition">
+            {/* <a href="/experiences" className="group transition">
               <span className="flex flex-col items-center justify-center">
                 <Briefcase className="w-5 h-5 group-hover:text-amber-400" />
                 <span className="text-xs md:text-sm">Experiences</span>
               </span>
-            </a>
+            </a> */}
 
             <a href="/projects" className="group transition">
               <span className="flex flex-col items-center justify-center">
