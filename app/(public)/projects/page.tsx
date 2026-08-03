@@ -2,7 +2,7 @@ import { PROJECTS } from "../../../lib/data/projects";
 import { ProjectPageCard } from "../../../components/Projects";
 import { ArrowUpRight, Folder } from "lucide-react";
 
-export const ProjectsPage = () => {
+export default function ProjectsPage () {
   return (
     <section className="w-full my-12 px-12 xl:px-24">
       <p className="text-sm text-gray-400 mb-3">
@@ -30,5 +30,3 @@ export const ProjectsPage = () => {
     </section>
   );
 };
-
-export default ProjectsPage;
