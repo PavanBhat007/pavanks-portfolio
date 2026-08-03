@@ -2,7 +2,7 @@ import { PROJECTS } from "../../../lib/data/projects";
 import { ProjectPageCard } from "../../../components/Projects";
 import { ArrowUpRight, Folder } from "lucide-react";
 
-export default function ProjectsPage () {
+export default function ProjectsPage() {
   return (
     <section className="w-full my-12 px-12 xl:px-24">
       <p className="text-sm text-gray-400 mb-3">
@@ -10,8 +10,8 @@ export default function ProjectsPage () {
       </p>
 
       <div className="flex items-center mb-8">
-      <Folder size={24} className="inline-block mr-2 text-neon" />
-      <h2 className="text-2xl font-bold text-white">Projects</h2>
+        <Folder size={24} className="inline-block mr-2 text-neon" />
+        <h2 className="text-2xl font-bold text-white">Projects</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -29,4 +29,4 @@ export default function ProjectsPage () {
       </button>
     </section>
   );
-};
+}

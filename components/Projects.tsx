@@ -96,10 +96,10 @@ export const ProjectCard = ({
               {languages.map((lang) => (
                 <span
                   key={lang}
-                  className="flex items-center gap-1.5 text-xs px-2 py-1 rounded 
-                 border border-cyan-400/30 
-                 bg-cyan-400/10 
-                 text-cyan-300 
+                  className="flex items-center gap-1.5 text-xs px-2 py-1 rounded
+                 border border-cyan-400/30
+                 bg-cyan-400/10
+                 text-cyan-300
                  font-mono
                  hover:shadow-[0_0_8px_rgba(56,189,248,0.25)]
                  transition-shadow duration-200 ease-out"
@@ -114,10 +114,10 @@ export const ProjectCard = ({
               {tools.map((tool) => (
                 <span
                   key={tool}
-                  className="flex items-center gap-1.5 text-xs px-2 py-1 rounded 
-                 border border-emerald-400/30 
-                 bg-emerald-400/10 
-                 text-emerald-300 
+                  className="flex items-center gap-1.5 text-xs px-2 py-1 rounded
+                 border border-emerald-400/30
+                 bg-emerald-400/10
+                 text-emerald-300
                  font-mono
                  hover:shadow-[0_0_8px_rgba(56,189,248,0.25)]
                  transition-shadow duration-200 ease-out"
@@ -132,10 +132,10 @@ export const ProjectCard = ({
               {collaborators.map((person) => (
                 <span
                   key={person}
-                  className="flex items-center gap-1.5 text-xs px-2 py-1 rounded 
-                 border border-amber-400/30 
-                 bg-amber-400/10 
-                 text-amber-300 
+                  className="flex items-center gap-1.5 text-xs px-2 py-1 rounded
+                 border border-amber-400/30
+                 bg-amber-400/10
+                 text-amber-300
                  font-mono cursor-pointer
                  hover:shadow-[0_0_8px_rgba(56,189,248,0.25)]
                  transition-shadow duration-200 ease-out"
