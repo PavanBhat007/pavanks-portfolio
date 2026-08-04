@@ -1,8 +1,8 @@
 import { Hero } from "../../components/Hero";
 import { Projects } from "../../components/Projects";
-import ExperienceTimeline from "../../components/ExperienceTimeline";
+import ExperienceTimeline from "../../components/experience/ExperienceTimeline";
 
-export const Portfolio = () => {
+export default function Portfolio() {
   return (
     <div className="flex flex-col space-y-12 px-12 pb-12 items-center lg:items-start justify-start w-full md:w-[80%] mx-auto">
       <Hero />
@@ -10,6 +10,4 @@ export const Portfolio = () => {
       <ExperienceTimeline />
     </div>
   );
-};
-
-export default Portfolio;
+}

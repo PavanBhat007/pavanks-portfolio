@@ -1,5 +1,5 @@
 {
-  "name": "cms-portfolio",
+  "name": "pavanks-portfolio",
   "version": "1.0.0",
   "description": "CMS based Portfolio website with a monolithic architecture, using NextJS, Tailwind CSS , TypeScript and MongoDB",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

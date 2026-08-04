@@ -1,5 +1,5 @@
 import { Briefcase } from "lucide-react";
-import { EXPERIENCES } from "../lib/data/experiences";
+import { EXPERIENCES } from "../../lib/data/experiences";
 
 export default function ExperienceTimeline() {
   return (
@@ -11,9 +11,7 @@ export default function ExperienceTimeline() {
 
       <div className="flex items-center gap-2 mb-6">
         <Briefcase className="text-neon" size={20} />
-        <h2 className="text-xl font-bold text-white">
-          Experiences
-        </h2>
+        <h2 className="text-xl font-bold text-white">Experiences</h2>
       </div>
 
       {/* Timeline container */}
@@ -61,9 +59,7 @@ export default function ExperienceTimeline() {
                 <span className="text-neon">{exp.role}</span>{" "}
                 <span className="text-gray-400">@ {exp.company}</span>
                 <span className="text-gray-500"> — </span>
-                <span className="text-gray-300">
-                  {exp.description}
-                </span>
+                <span className="text-gray-300">{exp.description}</span>
               </div>
             </div>
           ))}

@@ -20,19 +20,19 @@ export const Navbar = () => {
 
           {/* Nav Links */}
           <div className="flex items-center gap-5 text-sm font-medium">
+            <a href="/experiences" className="group transition">
+              <span className="flex flex-col items-center justify-center">
+                <Briefcase className="w-5 h-5 group-hover:text-amber-400" />
+                <span className="text-xs md:text-sm">Exp</span>
+              </span>
+            </a>
+
             <a href="/about" className="group transition">
               <span className="flex flex-col items-center justify-center">
                 <User className="w-5 h-5 group-hover:text-cyan-400" />
                 <span className="text-xs md:text-sm">About</span>
               </span>
             </a>
-
-            {/* <a href="/experiences" className="group transition">
-              <span className="flex flex-col items-center justify-center">
-                <Briefcase className="w-5 h-5 group-hover:text-amber-400" />
-                <span className="text-xs md:text-sm">Experiences</span>
-              </span>
-            </a> */}
 
             <a href="/projects" className="group transition">
               <span className="flex flex-col items-center justify-center">
