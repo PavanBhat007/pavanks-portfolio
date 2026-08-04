@@ -1,5 +1,5 @@
 import { Briefcase } from "lucide-react";
-import { EXPERIENCES } from "../lib/data/experiences";
+import { EXPERIENCES } from "../../lib/data/experiences";
 
 export default function ExperienceTimeline() {
   return (

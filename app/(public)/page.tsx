@@ -1,6 +1,6 @@
 import { Hero } from "../../components/Hero";
 import { Projects } from "../../components/Projects";
-import ExperienceTimeline from "../../components/ExperienceTimeline";
+import ExperienceTimeline from "../../components/experience/ExperienceTimeline";
 
 export default function Portfolio() {
   return (
