@@ -1,5 +1,6 @@
-import { Briefcase } from "lucide-react";
+import { ArrowUpRight, Briefcase } from "lucide-react";
 import { EXPERIENCES } from "../../lib/data/experiences";
+import Link from "next/link";
 
 export default function ExperienceTimeline() {
   return (
@@ -65,6 +66,16 @@ export default function ExperienceTimeline() {
           ))}
         </div>
       </div>
+
+      <Link href="/experiences">
+        <button className="inline-flex items-center gap-2 font-mono text-sm text-gray-400 hover:text-neon transition-colors group">
+          <span>Learn More</span>
+          <ArrowUpRight
+            size={14}
+            className="opacity-70 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+          />
+        </button>
+      </Link>
     </section>
   );
 }

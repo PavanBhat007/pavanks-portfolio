@@ -21,7 +21,7 @@ export default function ExperiencesPage() {
         <h2 className="text-2xl font-bold text-white">Experience</h2>
       </div>
 
-      <div className="flex flex-col md:flex-row items-stretch justify-center gap-4 w-full">
+      <div className="flex flex-col lg:flex-row items-stretch justify-center gap-4 w-full">
         {EXPERIENCES.map((exp, index) => {
           const isBetween = index > 0;
 
@@ -30,9 +30,9 @@ export default function ExperiencesPage() {
               key={exp.company + index}
               className="flex-1 flex items-center gap-4 min-w-0"
             >
-              {isBetween && (
+              <span className="hidden xl:inline-block">{isBetween && (
                 <ArrowLeft size={24} className="text-neon shrink-0 opacity-60" />
-              )}
+              )}</span>
 
               <div className="flex-1" onClick={() => setSelectedExperience(exp)}>
                 <ExperienceCard exp={exp} selected={selectedExperience.slug === exp.slug} />
