@@ -1,6 +1,49 @@
 export const PROJECTS = [
   {
     id: 1,
+    slug: "micro-skill-agent",
+    title: "Micro Skill Agent",
+    description:
+      'Micro Skill Agent is a personal growth assistant that gives the you one "Micro Skill" - an actionable 15-20 minutes skill you can learn each day to improve yourself and move towards your goal, aligned as per your interests. ',
+    technical_description: `
+      <h3>Problem</h3>
+      <p>
+        I have been facing a problem of wasting time and everyday I think I want to learn something but end up going to long YouTube tutorials that I won't complete and doesn't actually help me towards my goals.
+      </p>
+
+      <h3>Solution</h3>
+      <p>
+        Micro Skill Agent solves this problem that gives me just 1 skill that I can learn that day and I know that this will help me because the app uses my Interests and Goals that I have set and generates a skills according to that.
+      </p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li>Personalized User profile with Current Role, Interests and Goals which can be edited whenever user wants to.</li>
+        <li>Simple actionable skill generation once per day.</li>
+        <li>Clerk based auth - allows for Google login which is very accessible.</li>
+        <li>Personal Calendar and Streak to track and analyse completion of skills everyday</li>
+      </ul>
+
+      <h3>Tech Stack</h3>
+      <ul>
+        <li>NextJS</li>
+        <li>Tailwind CSS + TypeScript</li>
+        <li>MongoDB</li>
+        <li>Groq AI</li>
+        <li>Clerk Auth</li>
+        <li>Vercel</li>
+      </ul>
+    `,
+    image: "https://opengraph.githubassets.com/1/PavanBhat007/micro-skill-agent",
+    link: "https://micro-skill-agent.vercel.app",
+    languages: ["TypeScript", "Tailwind CSS", "NextJS"],
+    tools: ["Clerk", "MongoDB", "Groq"],
+    collaborators: [],
+    year: 2026,
+  },
+  
+  {
+    id: 2,
     slug: "metabuddy",
     title: "MetaBuddy",
     description:
@@ -43,7 +86,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 2,
+    id: 3,
     slug: "ecg-analyser-demo",
     title: "ECG Analyser Demo",
     description:
@@ -87,7 +130,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 3,
+    id: 4,
     slug: "food-order-website",
     title: "Food Order Website",
     description:
@@ -124,7 +167,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 4,
+    id: 5,
     slug: "canteen-billing-system",
     title: "Canteen Billing System",
     description:
@@ -159,7 +202,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 5,
+    id: 6,
     slug: "nasa-space-apps-hackathon-landing-page",
     title: "NASA Space Apps Hackathon Landing Page",
     description:
@@ -193,7 +236,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 6,
+    id: 7,
     slug: "hospital-system-dashboard",
     title: "Hospital System Dashboard",
     description:
