@@ -68,7 +68,7 @@ export default function ExperienceTimeline() {
       </div>
 
       <Link href="/experiences">
-        <button className="inline-flex items-center gap-2 font-mono text-sm text-gray-400 hover:text-neon transition-colors group">
+        <button className="mt-4 lg:mt-1 inline-flex items-center gap-2 font-mono text-sm text-gray-400 hover:text-neon transition-colors group">
           <span>Learn More</span>
           <ArrowUpRight
             size={14}
