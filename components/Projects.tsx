@@ -2,7 +2,7 @@ import {
   ArrowUpRight,
   Bolt,
   DraftingCompass,
-  GithubIcon,
+  ExternalLinkIcon,
   StarsIcon,
   User,
 } from "lucide-react";
@@ -50,7 +50,7 @@ interface ProjectCardProps {
   languages: string[];
   tools: string[];
   collaborators: string[];
-  repo?: string;
+  link?: string;
   image: string;
   year: number;
 }
@@ -63,7 +63,7 @@ export const ProjectCard = ({
   languages,
   tools,
   collaborators,
-  repo,
+  link,
   image,
   year,
 }: ProjectCardProps) => {
@@ -145,19 +145,6 @@ export const ProjectCard = ({
                 </span>
               ))}
             </div>
-
-            {/* Footer */}
-            {repo && (
-              <a
-                href={repo}
-                target="_blank"
-                className="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-neon transition-colors duration-200"
-              >
-                <GithubIcon size={16} />
-                View Source
-                <ArrowUpRight size={14} />
-              </a>
-            )}
           </div>
         </div>
       </div>

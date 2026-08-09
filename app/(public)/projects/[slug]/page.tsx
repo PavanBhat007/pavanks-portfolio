@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { PROJECTS } from "../../../../lib/data/projects";
-import { Calendar, Github, Tag, User } from "lucide-react";
+import { Calendar, ExternalLink, Tag, User, Users } from "lucide-react";
 import Link from "next/link";
 
 const TERMINAL_COLORS = [
@@ -60,8 +60,8 @@ export default async function Project({ params }) {
             target="_blank"
             className="flex items-center gap-2 text-gray-400 hover:text-neon transition"
           >
-            <Github size={16} />
-            View Repository
+            <ExternalLink size={16} />
+            View
           </Link>
         </div>
 
@@ -82,10 +82,11 @@ export default async function Project({ params }) {
           ))}
         </div>
 
-        <div className="mt-2 flex items-center gap-2">
+        <div className="mt-2 flex flex-wrap items-center gap-2">
+          <Users size={14} className="text-gray-400" />
           {project.collaborators.map((person) => {
             return (
-              <p className="flex items-center gap-2 text-xs text-gray-400 bg-[#313244] px-2 py-1 rounded font-semibold">
+              <p key={person} className="flex items-center gap-2 text-xs text-gray-400 bg-[#313244] px-2 py-1 rounded font-semibold">
                 <User size={14} />
                 <span>{person}</span>
               </p>
