@@ -7,9 +7,9 @@ type AboutMeProps = {
 
 export default function AboutMe({ heroPage = true }: AboutMeProps) {
   return (
-    <div>
-      <div className="text-base leading-relaxed w-[90%]">
-        <p className="text-sm text-gray-400 ">
+    <div className="w-full md:w-[90%]">
+      <div className="text-sm md:text-base leading-relaxed">
+        <p className="text-xs md:text-sm text-gray-400 ">
           <span className="text-neon">{heroPage ? "root@kspavan:~$" : "about$"}</span> cat about_me.txt
         </p>
         <p className="mt-2">
@@ -33,7 +33,7 @@ export default function AboutMe({ heroPage = true }: AboutMeProps) {
         </p>
       </div>
 
-      <div className="flex items-center gap-4 mt-6 text-sm">
+      <div className="flex flex-wrap items-center gap-4 mt-6 text-sm">
         <div className="flex items-center gap-1 font-medium border-r-2 pr-4 py-0 border-white/60">
           <Twitter size={16} className="inline-block mr-2" />
           <CustomLink text="@ksp_bhat" href="https://x.com/ksp_bhat" />
