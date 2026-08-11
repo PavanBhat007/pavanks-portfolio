@@ -67,7 +67,7 @@ export default async function SteamStats() {
               style={{ zIndex: 10 - index }}
               className="relative w-9 h-9 shrink-0 -ml-3.5 hover:-translate-y-1 hover:scale-110 transition-all duration-200"
             >
-              <div className="relative w-full h-full rounded-lg overflow-hidden border border-white/20 ring-2 ring-[#1E1E2E] shadow-md shadow-black/50">
+              <div className="relative w-full h-full rounded-lg overflow-hidden border border-white/20 shadow-md shadow-black/50">
                 <Image
                   src={game.iconUrl}
                   alt={game.name}
