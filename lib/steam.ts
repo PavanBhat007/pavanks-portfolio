@@ -1,6 +1,4 @@
-import { NextResponse } from "next/server";
-
-export async function GET() {
+export async function getSteamStats() {
   const key = process.env.STEAM_API_KEY;
   const id = process.env.STEAM_ID;
 
@@ -12,7 +10,7 @@ export async function GET() {
     const data = await res.json();
 
     const games = data.response.games || [];
-    const playedGames = games
+    let playedGames = games
       .filter((game) => game.playtime_forever > 0)
       .sort((a, b) => b.playtime_forever - a.playtime_forever)
       .map((game) => ({
@@ -22,16 +20,11 @@ export async function GET() {
         iconUrl: `https://media.steampowered.com/steamcommunity/public/images/apps/${game.appid}/${game.img_icon_url}.jpg`,
       }));
     const topGames = playedGames.slice(0, 5);
+    playedGames = playedGames.slice(5, playedGames.length)
 
-    return NextResponse.json(
-      { top5: topGames, games: playedGames.slice(5, playedGames.length) },
-      { status: 200 },
-    );
+    return { top5: topGames, games: playedGames };
   } catch (error) {
-    console.error("Error fetching games:", error);
-    return NextResponse.json(
-      { error: "Failed to fetch Steam data" },
-      { status: 500 },
-    );
+    console.error("Error fetching Steam data:", error);
+    return { top5: [], games: [] };
   }
 }
