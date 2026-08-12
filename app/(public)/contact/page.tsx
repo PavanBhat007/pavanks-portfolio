@@ -92,7 +92,7 @@ export default function ContactPage() {
               <input type="email" name="name" placeholder="What's your e-mail?" className="w-full flex-1 bg-transparent outline-none" />
             </div>
             <div className="flex flex-col gap-4 border border-gray-600/50 rounded-lg p-4">
-              <label htmlFor="name" className="text-neon font-semibold flex items-center gap-2"><MessageCircleMore size={16} /><span>Write a Message</span></label>
+              <label htmlFor="name" className="text-neon font-semibold flex items-center gap-4"><MessageCircleMore size={16} /><span>Write a Message</span></label>
               <textarea className="bg-transparent w-full outline-none" rows={6} />
             </div>
 
