@@ -16,7 +16,7 @@ export default function AboutPage() {
       </div>
 
       <div className="flex flex-col-reverse lg:flex-row items-center gap-4 justify-between w-full">
-        <div className="w-full lg:w-1/3 flex justify-start lg:justify-center">
+        <div className="relative w-full lg:w-1/3 flex justify-start lg:justify-center">
           <div className="relative w-full max-w-sm aspect-[1/1] rounded-2xl overflow-hidden border border-white/10 shadow-lg shadow-gray-300/10">
             <Image
               src="/images/me.jpeg"
@@ -25,6 +25,8 @@ export default function AboutPage() {
               className="object-cover"
             />
           </div>
+          <div className="absolute top-0 left-0 -rotate-45 w-20 h-6 bg-gray-600/30"/>
+          <div className="absolute bottom-0 right-0 -rotate-45 w-20 h-6 bg-gray-600/30"/>
         </div>
         <div className="w-full lg:w-2/3 lg:px-12 flex-1">
           <HeroContent heroPage={false} />

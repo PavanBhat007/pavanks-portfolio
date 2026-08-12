@@ -1,4 +1,4 @@
-import { ArrowRight, GithubIcon, LinkedinIcon, Twitter } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
 import CustomLink from "./CustomLink";
 
 type AboutMeProps = {
@@ -39,13 +39,13 @@ export default function AboutMe({ heroPage = true }: AboutMeProps) {
           <CustomLink text="@ksp_bhat" href="https://x.com/ksp_bhat" />
         </div>
         <div className="flex items-center gap-1 font-medium border-r-2 pr-4 py-0 border-white/60">
-          <GithubIcon size={16} className="inline-block mr-2" />
+          <Github size={16} className="inline-block mr-2" />
           <CustomLink href="https://github.com/PavanBhat007" text="PavanBhat007"/>
         </div>
         <div
           className={`flex items-center gap-1 font-medium pr-4 py-0 ${heroPage && "border-r-2 border-white/60"}`}
         >
-          <LinkedinIcon size={16} className="inline-block mr-2" />
+          <Linkedin size={16} className="inline-block mr-2" />
           <CustomLink href="https://linkedin.com/in/pavan-ks-bhat" text="Pavan KS Bhat"/>
         </div>
         {heroPage && (
