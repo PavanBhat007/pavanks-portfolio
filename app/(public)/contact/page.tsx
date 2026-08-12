@@ -27,9 +27,9 @@ export default function ContactPage() {
         <h2 className="text-2xl font-bold text-white">Get In Touch</h2>
       </div>
 
-      <div className="w-full flex items-center justify-between gap-8">
-        <div className="w-full lg:w-1/3 flex flex-col gap-4">
-          <div className="flex flex-col gap-2 p-4">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div className="w-full lg:w-1/3 flex flex-col md:flex-row lg:flex-col gap-4 md:px-12 lg:px-4">
+          <div className="w-full max-w-sm flex flex-col gap-2 p-4">
             <h3 className="text-xl pb-1 border-b border-gray-600/30 mb-2">
               Contact
             </h3>
@@ -49,7 +49,7 @@ export default function ContactPage() {
               <ArrowUpRight size={12} />
             </div>
           </div>
-          <div className="p-4">
+          <div className="w-full max-w-sm flex flex-col gap-2 p-4">
             <h3 className="text-xl pb-1 border-b border-gray-600/30 mb-2">
               Socials
             </h3>
@@ -76,7 +76,7 @@ export default function ContactPage() {
           </div>
         </div>
         
-        <div className="w-full lg:w-2/3 py-4 px-12">
+        <div className="w-full lg:w-2/3 py-4 md:px-12">
           <h3 className="text-lg text-center mb-4">Drop a Message!</h3>
           <form className="w-full flex flex-col gap-4">
             <div className="flex items-center gap-4 border border-gray-600/50 rounded-lg p-4">
