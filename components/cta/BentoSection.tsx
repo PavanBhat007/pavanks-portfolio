@@ -17,8 +17,11 @@ export default function FinalCTASection() {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-4 gap-4 mt-4">
-        <Card icon={<Webcam size={14} />} title="Let's Connect">
+      <div className="w-full mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <Card
+          icon={<Webcam size={16} className="text-orange-600" />}
+          title="Let's Connect"
+        >
           <div className="flex flex-col gap-4">
             <p className="font-light px-2">
               Open to connect for a meeting to discuss ideas and projects.
@@ -26,7 +29,7 @@ export default function FinalCTASection() {
             <Link
               href="https://calendar.app.google/xgju7bGfQSpQEdSw9"
               title="Connect for 30 mins"
-              className="w-full mx-auto bg-neon text-[#0b0f14] px-4 py-1 rounded flex items-center justify-center gap-1"
+              className="w-full mx-auto bg-orange-400 border border-orange-300 hover:bg-orange-300 text-[#0b0f14] px-4 py-1 rounded flex items-center justify-center gap-1"
             >
               <Calendar size={14} />
               <span>Book a slot</span>
@@ -34,9 +37,12 @@ export default function FinalCTASection() {
           </div>
         </Card>
 
-        <Card icon={<MapPin size={14} />} title="Currently based in">
-          <div className="relative w-full h-32 overflow-hidden rounded-lg bg-[#181825]">
-            <div className="grid grid-cols-2 w-[200%] h-[180%] -ml-[65%] -mt-[45%] relative">
+        <Card
+          icon={<MapPin size={16} className="text-red-500" />}
+          title="Currently based in"
+        >
+          <div className="relative w-full h-full md:h-32 overflow-hidden rounded-lg bg-[#181825]">
+            <div className="hidden md:grid grid-cols-2 w-[200%] h-[180%] -ml-[65%] -mt-[45%] relative">
               <Image
                 src="https://a.basemaps.cartocdn.com/dark_all/8/182/118.png"
                 alt="West Region"
@@ -54,27 +60,35 @@ export default function FinalCTASection() {
                 unoptimized
               />
             </div>
+            <div className="p-2 w-full flex items-end">
+              <p className="font-semibold text-white mx-auto">📍 Bengaluru</p>
+            </div>
           </div>
         </Card>
 
-        <Card icon={<Music size={14} />} title="Listening To" colSpan={2}>
-          <Link
-            href="https://open.spotify.com/user/31m4eetibpdt6rrv5rugldfote4m?si=8fb45084c09d4b67"
-            about="_blank"
-            rel="noopener noreferrer"
-            className="overflow-hidden rounded-lg"
+        <div className="col-span-1 md:col-span-2 xl:col-span-2">
+          <Card
+            icon={<Music size={16} className="text-neon" />}
+            title="Listening To"
           >
-            <iframe
-              src="https://open.spotify.com/embed/playlist/0gyLZ2aU4Y1e9PWRFM0LEG?si=34b78dd6660c4ef1?utm_source=generator&theme=0"
-              width="100%"
-              height="152"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-              className="rounded-lg"
-            />
-          </Link>
-        </Card>
+            <Link
+              href="https://open.spotify.com/user/31m4eetibpdt6rrv5rugldfote4m?si=8fb45084c09d4b67"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full overflow-hidden rounded-lg"
+            >
+              <iframe
+                src="https://open.spotify.com/embed/playlist/0gyLZ2aU4Y1e9PWRFM0LEG?si=34b78dd6660c4ef1&utm_source=generator&theme=0"
+                width="100%"
+                height="100"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="w-full rounded-lg"
+              />
+            </Link>
+          </Card>
+        </div>
       </div>
     </section>
   );
