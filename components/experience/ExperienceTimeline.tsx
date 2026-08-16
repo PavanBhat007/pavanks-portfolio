@@ -1,10 +1,25 @@
+"use client";
+
+import { useRef } from "react";
 import { ArrowUpRight, Briefcase } from "lucide-react";
 import { EXPERIENCES } from "../../lib/data/experiences";
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function ExperienceTimeline() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Track scroll progress relative to this section
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start 80%", "end 50%"],
+  });
+
+  // Transform scale for smooth fill
+  const scaleLine = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
   return (
-    <section className="mt-20 w-full font-mono">
+    <section ref={containerRef} className="mt-20 w-full font-mono">
       {/* Header */}
       <p className="text-sm text-gray-400 mb-3">
         <span className="text-neon">root@kspavan:~$</span> cat experience.log
@@ -17,12 +32,28 @@ export default function ExperienceTimeline() {
 
       {/* Timeline container */}
       <div className="relative">
-        {/* Line */}
+        {/* Static Background Base Line */}
         <div
           className="
             absolute left-4 top-0 h-full w-px
             bg-[#30363d]
             lg:left-0 lg:top-5 lg:h-px lg:w-full
+          "
+        />
+
+        {/* Animated Emerald-to-Blue Gradient Overlay */}
+        <motion.div
+          style={{
+            scaleY: scaleLine,
+            scaleX: scaleLine,
+            transformOrigin: "top left",
+          }}
+          className="
+            absolute left-4 top-0 h-full w-px
+            bg-gradient-to-b from-emerald-400 to-blue-500
+            lg:left-0 lg:top-5 lg:h-px lg:w-full
+            lg:bg-gradient-to-r lg:from-emerald-400 lg:to-blue-500
+            z-10
           "
         />
 
@@ -45,7 +76,7 @@ export default function ExperienceTimeline() {
               {/* Dot */}
               <span
                 className={`
-                  absolute
+                  absolute z-20
                   left-3 top-1.5
                   lg:left-1/2 lg:-translate-x-1/2 lg:top-4
                   h-2 w-2 rounded-full

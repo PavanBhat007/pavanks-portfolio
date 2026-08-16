@@ -15,7 +15,7 @@ export default function Card({ icon, title, subtitle, children }: CardProps) {
           <span>{icon}</span>
           <p className="font-semibold">{title}</p>
         </div>
-        {subtitle && <p>{subtitle}</p>}
+        {subtitle && <div>{subtitle}</div>}
       </div>
       <div>{children}</div>
     </div>
