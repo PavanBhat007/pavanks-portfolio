@@ -1,7 +1,7 @@
 import { Hero } from "../../components/Hero";
 import { Projects } from "../../components/Projects";
 import ExperienceTimeline from "../../components/experience/ExperienceTimeline";
-import GitStatsSection from "../../components/cta/BentoSection";
+import GitStatsSection from "../../components/bento/BentoSection";
 
 export default function Portfolio() {
   return (
