@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export const Projects = () => {
   return (
-    <section className="w-full mt-20">
+    <section className="w-full mt-10">
       <p className="text-sm text-gray-400 mb-3">
         <span className="text-neon">root@kspavan:~$</span> ls projects | head -n
         2

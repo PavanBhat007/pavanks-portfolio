@@ -4,7 +4,7 @@ import { MapCard } from "./MapCard";
 import { ConnectCard } from "./ConnectCard";
 import { SpotifyCard } from "./SpotifyCard";
 
-export default function FinalCTASection() {
+export default function BentoSection() {
   return (
     <section className="w-full my-12">
       <div className="w-full flex flex-col lg:flex-row items-stretch gap-4">

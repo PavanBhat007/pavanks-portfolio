@@ -19,7 +19,7 @@ export default function ExperienceTimeline() {
   const scaleLine = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <section ref={containerRef} className="mt-20 w-full font-mono">
+    <section ref={containerRef} className="mt-10 w-full font-mono">
       {/* Header */}
       <p className="text-sm text-gray-400 mb-3">
         <span className="text-neon">root@kspavan:~$</span> cat experience.log
@@ -88,8 +88,8 @@ export default function ExperienceTimeline() {
               {/* Terminal row */}
               <div className="text-xs text-gray-300 leading-relaxed">
                 <span className="text-gray-500">[{exp.period}]</span>{" "}
-                <span className="text-neon">{exp.role}</span>{" "}
-                <span className="text-gray-400">@ {exp.company}</span>
+                <span className="text-neon font-semibold">{exp.role}</span>{" "}
+                <span className="text-gray-400 font-semibold">@ {exp.company}</span>
                 <span className="text-gray-500"> — </span>
                 <span className="text-gray-300">{exp.description}</span>
               </div>
