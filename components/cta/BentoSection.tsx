@@ -66,7 +66,7 @@ export default function FinalCTASection() {
           </div>
         </Card>
 
-        <div className="col-span-1 md:col-span-2 xl:col-span-2">
+        <div className="col-span-1 md:col-span-2 xl:col-span-2 h-full">
           <Card
             icon={<Music size={16} className="text-neon" />}
             title="Listening To"
