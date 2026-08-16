@@ -1,9 +1,8 @@
-export async function getSteamStats() {
-  const key = process.env.STEAM_API_KEY;
-  const id = process.env.STEAM_ID;
+import { STEAM_API_KEY, STEAM_ID } from "./constants";
 
+export async function getSteamStats() {
   // https://api.steampowered.com/<interface>/<method>/v<version>?<options>
-  const URL = `https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${key}&steamid=${id}&include_appinfo=true&include_played_free_games=true&format=json`;
+  const URL = `https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${STEAM_API_KEY}&steamid=${STEAM_ID}&include_appinfo=true&include_played_free_games=true&format=json`;
 
   try {
     const res = await fetch(URL, { next: { revalidate: 3600 } });
