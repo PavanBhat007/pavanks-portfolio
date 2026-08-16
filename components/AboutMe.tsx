@@ -7,7 +7,7 @@ type AboutMeProps = {
 
 export default function AboutMe({ heroPage = true }: AboutMeProps) {
   return (
-    <div className="w-full md:w-[90%]">
+    <div className="w-full md:w-[90%] flex flex-col h-full justify-between">
       <div className="text-sm md:text-base leading-relaxed">
         <p className="text-xs md:text-sm text-gray-400 ">
           <span className="text-neon">{heroPage ? "root@kspavan:~$" : "about$"}</span> cat about_me.txt
