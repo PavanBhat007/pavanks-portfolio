@@ -1,6 +1,7 @@
 import { Hero } from "../../components/Hero";
 import { Projects } from "../../components/Projects";
 import ExperienceTimeline from "../../components/experience/ExperienceTimeline";
+import GitStatsSection from "../../components/cta/BentoSection";
 
 export default function Portfolio() {
   return (
@@ -8,6 +9,7 @@ export default function Portfolio() {
       <Hero />
       <Projects />
       <ExperienceTimeline />
+      <GitStatsSection />
     </div>
   );
 }
