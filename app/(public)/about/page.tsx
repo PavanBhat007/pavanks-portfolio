@@ -15,7 +15,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold text-white">About Me</h2>
       </div>
 
-      <div className="flex flex-col-reverse lg:flex-row items-center gap-4 justify-between w-full">
+      <div className="flex flex-col-reverse lg:flex-row items-stretch gap-4 justify-between w-full">
         <div className="relative w-full lg:w-1/3 flex justify-start lg:justify-center">
           <div className="relative w-full max-w-sm aspect-[1/1] rounded-2xl overflow-hidden border border-white/10 shadow-lg shadow-gray-300/10">
             <Image
