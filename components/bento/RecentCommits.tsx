@@ -1,4 +1,4 @@
-import { GitCommit } from "lucide-react";
+import { ExternalLink, GitCommit } from "lucide-react";
 import { getGithubStats } from "../../lib/github";
 import Link from "next/link";
 
@@ -13,12 +13,12 @@ export default async function RecentCommits({
 
   return (
     <div className="w-full h-full border border-white/10 rounded-xl p-4 md:p-6 font-mono text-sm shadow-xl text-gray-300">
-      <div className="flex items-center justify-between mb-2 border-b border-gray-300/20 pb-2">
+      <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <GitCommit size={18} className="text-[#f472b6]" />
-          <h3 className="text-white font-bold text-base tracking-wide">
+          <p className="text-white font-bold text-sm">
             Recent Commits
-          </h3>
+          </p>
         </div>
         <span className="text-[#f472b6]/70 text-xs font-mono">[changes]</span>
       </div>
@@ -57,9 +57,12 @@ export default async function RecentCommits({
           href={`https://github.com/${username}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-[#f472b6] hover:text-[#f472b6]/80 transition-colors font-bold shrink-0"
+          className="flex items-center gap-1.5 text-[#f472b6] hover:text-[#f472b6]/80 transition-colors shrink-0"
         >
-          <span>View on GitHub</span>
+          <p className="text-xs flex items-center gap-2">
+            <span>View on GitHub</span>
+            <ExternalLink size={10} />
+          </p>
         </Link>
         
         <div className="flex-1 flex h-2 rounded-full overflow-hidden bg-[#1e1e2e] gap-[2px]">

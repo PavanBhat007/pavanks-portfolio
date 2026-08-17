@@ -33,9 +33,9 @@ export async function getGithubStats(username: string) {
     );
     const events = await eventsRes.json();
 
-    // PushEvent => contains commits => keep only recent 4
+    // PushEvent => contains commits => keep only recent 3
     const pushEvents = Array.isArray(events)
-      ? events.filter((e: any) => e.type === "PushEvent").slice(0, 4)
+      ? events.filter((e: any) => e.type === "PushEvent").slice(0, 3)
       : [];
 
     const repoNames: string[] = Array.from(
