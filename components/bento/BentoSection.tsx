@@ -6,7 +6,7 @@ import { SpotifyCard } from "./SpotifyCard";
 
 export default function BentoSection() {
   return (
-    <section className="w-full my-12">
+    <section className="w-full mt-12 mb-6">
       <div className="w-full flex flex-col lg:flex-row items-stretch gap-4">
         <div className="w-full lg:w-1/2 xl:w-2/3">
           <RecentCommits />

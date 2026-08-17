@@ -3,6 +3,7 @@ import { Projects } from "../../components/Projects";
 import ExperienceTimeline from "../../components/experience/ExperienceTimeline";
 import BentoSection from "../../components/bento/BentoSection";
 import FadeIn from "../../components/FadeIn";
+import { Footer } from "../../components/Footer";
 
 export default function Portfolio() {
   return (
@@ -22,6 +23,8 @@ export default function Portfolio() {
       <FadeIn>
         <BentoSection />
       </FadeIn>
+
+      <Footer />
     </div>
   );
 }
